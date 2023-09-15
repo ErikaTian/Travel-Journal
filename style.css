@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F55A5A;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 56%;
+  height: 200px;
+  margin-left: 22%;
+  margin-top: 50px;
+}
+
+.card--img {
+  width: 150px;
+  height: 200px;
+}
+
+.card--info {
+  margin-left: 20px;
+}
+
+.card--location {}
+
+.card--location img {
+  width: 8px;
+  height: 10px;
+}
+
+.card--capitalized {
+  width: 50px;
+  height: 20px;
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: .15rem;
+  color: #686868;
+  text-transform: uppercase;
+}
+
+.gray {
+  color: #918E9B;
+  width: 145px;
+  height: 20px;
+  margin-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card--info h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.card--info h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #505050;
+}
+
+.card--info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #686868;
+}
+
+.footer {
+  height: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
+  background-color: #F55A5A;
+  text-align: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-left: 12%;
+    margin-top: 15px;
+  }
+
+  .card--img {
+    width: 110px;
+    height: 150px;
+  }
+
+  .card--info {
+    width: 90%;
+    /* width: 300px;
+    height: 200px; */
+  }
+
+  .card--capitalized {
+    font-size: 12px;
+  }
+  
+  .gray {
+    font-size: 12px;
+  }
+
+  .card h1 {
+    font-size: 16px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .cards-list {
+    display: flex;
+		flex-direction: column;
+		/* gap: 50px; */
+		overflow-y: auto;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
